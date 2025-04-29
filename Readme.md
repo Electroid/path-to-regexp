@@ -10,8 +10,12 @@
 
 ## Installation
 
-```
-npm install path-to-regexp --save
+Install with your choice of package manager: npm, yarn, or bun.
+
+```sh
+npm install path-to-regexp
+yarn add path-to-regexp
+bun add path-to-regexp
 ```
 
 ## Usage
@@ -25,6 +29,8 @@ const {
   stringify,
 } = require("path-to-regexp");
 ```
+
+This library is compatible and tested with Node.js 16+ and Bun 1.2+.
 
 ### Parameters
 
@@ -141,7 +147,7 @@ const path = stringify(data); //=> "/:foo"
 
 ### Parse
 
-The `parse` function accepts a string and returns `TokenData`, the set of tokens and other metadata parsed from the input string. `TokenData` is can used with `match` and `compile`.
+The `parse` function accepts a string and returns `TokenData`, which can be used with `match` and `compile`.
 
 - **path** A string.
 - **options** _(optional)_
